@@ -1,0 +1,8 @@
+voronoi()
+  .kaleid(7)
+  .mult(gradient([5, 2, 4]))
+  .posterize(4)
+  .brightness(0.3)
+  .modulatePixelate(noise(40,0.2),12)
+  .modulateKaleid(osc(11,0.5,0).rotate(5, 1),2)
+  .out()
